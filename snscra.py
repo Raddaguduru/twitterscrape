@@ -49,8 +49,4 @@ for i,tweet in enumerate(sntwitter.TwitterSearchScraper("'"+tweetsrchitem+"'" ).
 
 # Creating a dataframe from the tweets list above
 tweets_df2 = pd.DataFrame(tweets_list2, columns=['Datetime','Tweet Id', 'Text', 'Username'])
-<<<<<<< HEAD
-tweets_df2.to_csv(os.getcwd() + r'output.csv', sep=',', encoding='utf-8', header=True, index=False)
-=======
 tweets_df2.to_csv(os.getcwd() + r'/output.csv', sep=',', encoding='utf-8', header=True, index=False)
->>>>>>> 4339ee69a85409b6ae0003afcd6ffa54070bca54
